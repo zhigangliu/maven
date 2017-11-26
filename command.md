@@ -34,7 +34,7 @@ mvn eclipse:eclipse
 </project>
 ```
 
-* compiler java version (new way
+* compiler java version (new way)
 ```
 <project>
   <properties>
@@ -42,4 +42,4 @@ mvn eclipse:eclipse
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 </project>
-```)
+```
