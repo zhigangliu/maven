@@ -17,6 +17,8 @@
 
   jar, war, pom
 
+  packaging type required to be `pom` for parent and aggregation (multi-module) projects
+
 # Inheritance
   child project inherit everything
 
@@ -98,11 +100,11 @@ this will push those grouped dependencies one level down, so please note `neares
 child project would use version defined in parent POM, unless explicitly specified
 ```
 <project>
-	<dependencies>
-		<dependency>
+  <dependencies>
+	  <dependency>
 		  <groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot</artifactId>
-	</dependency>
+		  <artifactId>spring-boot</artifactId>
+    </dependency>
   </dependencies>
 </project>
 ```
@@ -111,9 +113,10 @@ child project would use version defined in parent POM, unless explicitly specifi
 simply telling a project that its build should include the specified modules
 ```
 <project>
-	<modules>
-		<module>spring-boot-starter</module>
-		<module>spring-boot-starter-activemq</module>
+...
+  <modules>
+	  <module>spring-boot-starter</module>
+	  <module>spring-boot-starter-activemq</module>
   </modules>
 </project>
   ```

@@ -15,6 +15,7 @@ mvn dependency:tree
 mvn dependency:tree -Dverbose -Dincludes=junit
 mvn exec:java -Dexec.mainClass=codetest.Main -Dexec.args="mbp vga"
 mvn eclipse:eclipse
+mvn install:install-file -Dfile=non-maven-proj.jar -DgroupId=some.group -DartifactId=non-maven-proj -Dversion=1 -Dpackaging=jar
 ```
 
 * compiler java version (old way)
